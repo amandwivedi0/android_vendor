@@ -16,8 +16,12 @@
 #
 
 # Boot Animation
-scr_resolution := 1080x1920
+scr_resolution := 720x1280
 statix_device := $(patsubst %f,%,$(subst statix_,,$(TARGET_PRODUCT)))
+
+ifneq ($(filter santoni,$(statix_device)),)
+scr_resolution := 720x1280
+endif
 
 ifneq ($(filter taimen,$(statix_device)),)
 scr_resolution := 1440x2880
