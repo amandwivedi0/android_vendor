@@ -74,7 +74,7 @@ include vendor/statix/config/branding.mk
 include vendor/statix/config/pixel2-audio_prebuilt.mk
 
 # Bootanimation
-include vendor/statix/config/bootanimation.mk
+include vendor/statix/config/statix-bootanimation.mk
 
 # Fonts
 include vendor/statix/config/fonts.mk
